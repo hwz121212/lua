@@ -57,7 +57,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_UNICODE;_USE_MATH_DEFINES;LUA_COMPAT_MODULE;LUA_COMPAT_LOADSTRING;LUA_COMPAT_APIINTCASTS;LUA_32BITS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;_UNICODE;_USE_MATH_DEFINES;LUA_COMPAT_MODULE;LUA_COMPAT_LOADSTRING;LUA_COMPAT_APIINTCASTS;LUA_32BITS;</PreprocessorDefinitions>
       <StringPooling>false</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -69,19 +69,12 @@
       <AdditionalIncludeDirectories />
     </ClCompile>
     <Lib />
-    <Midl>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MkTypLibCompatible>false</MkTypLibCompatible>
-    </Midl>
+    
     <PostBuildEvent>
       <Command>
       </Command>
     </PostBuildEvent>
-    <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <Culture>0x0804</Culture>
-      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
+    
     <Lib>
       <AdditionalLibraryDirectories />
     </Lib>
@@ -89,7 +82,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_UNICODE;_USE_MATH_DEFINES;LUA_COMPAT_MODULE;LUA_COMPAT_LOADSTRING;LUA_COMPAT_APIINTCASTS;LUA_32BITS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_UNICODE;_USE_MATH_DEFINES;LUA_COMPAT_MODULE;LUA_COMPAT_LOADSTRING;LUA_COMPAT_APIINTCASTS;LUA_32BITS;</PreprocessorDefinitions>
       <StringPooling>false</StringPooling>
       <MinimalRebuild>true</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -101,19 +94,12 @@
       <AdditionalIncludeDirectories />
     </ClCompile>
     <Lib />
-    <Midl>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MkTypLibCompatible>false</MkTypLibCompatible>
-    </Midl>
+    
     <PostBuildEvent>
       <Command>
       </Command>
     </PostBuildEvent>
-    <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <Culture>0x0804</Culture>
-      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
+    
     <Lib>
       <AdditionalLibraryDirectories />
     </Lib>
