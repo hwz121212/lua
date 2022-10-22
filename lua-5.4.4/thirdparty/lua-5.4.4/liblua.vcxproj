@@ -66,15 +66,13 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <AdditionalIncludeDirectories />
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
-    
     <PostBuildEvent>
       <Command>
       </Command>
     </PostBuildEvent>
-    
     <Lib>
       <AdditionalLibraryDirectories />
     </Lib>
@@ -91,15 +89,13 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories />
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib />
-    
     <PostBuildEvent>
       <Command>
       </Command>
     </PostBuildEvent>
-    
     <Lib>
       <AdditionalLibraryDirectories />
     </Lib>
@@ -140,32 +136,34 @@
     <ClCompile Include="src\lzio.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\lapi.h" />
-    <ClInclude Include="src\lauxlib.h" />
-    <ClInclude Include="src\lcode.h" />
-    <ClInclude Include="src\lctype.h" />
-    <ClInclude Include="src\ldebug.h" />
-    <ClInclude Include="src\ldo.h" />
-    <ClInclude Include="src\lfunc.h" />
-    <ClInclude Include="src\lgc.h" />
-    <ClInclude Include="src\llex.h" />
-    <ClInclude Include="src\llimits.h" />
-    <ClInclude Include="src\lmem.h" />
-    <ClInclude Include="src\lobject.h" />
-    <ClInclude Include="src\lopcodes.h" />
-    <ClInclude Include="src\lparser.h" />
-    <ClInclude Include="src\lprefix.h" />
-    <ClInclude Include="src\lstate.h" />
-    <ClInclude Include="src\lstring.h" />
-    <ClInclude Include="src\ltable.h" />
-    <ClInclude Include="src\ltm.h" />
-    <ClInclude Include="src\lua.h" />
-    <ClInclude Include="src\lua.hpp" />
-    <ClInclude Include="src\luaconf.h" />
-    <ClInclude Include="src\lualib.h" />
-    <ClInclude Include="src\lundump.h" />
-    <ClInclude Include="src\lvm.h" />
-    <ClInclude Include="src\lzio.h" />
+    <ClInclude Include="include\lapi.h" />
+    <ClInclude Include="include\lauxlib.h" />
+    <ClInclude Include="include\lcode.h" />
+    <ClInclude Include="include\lctype.h" />
+    <ClInclude Include="include\ldebug.h" />
+    <ClInclude Include="include\ldo.h" />
+    <ClInclude Include="include\lfunc.h" />
+    <ClInclude Include="include\lgc.h" />
+    <ClInclude Include="include\ljumptab.h" />
+    <ClInclude Include="include\llex.h" />
+    <ClInclude Include="include\llimits.h" />
+    <ClInclude Include="include\lmem.h" />
+    <ClInclude Include="include\lobject.h" />
+    <ClInclude Include="include\lopcodes.h" />
+    <ClInclude Include="include\lopnames.h" />
+    <ClInclude Include="include\lparser.h" />
+    <ClInclude Include="include\lprefix.h" />
+    <ClInclude Include="include\lstate.h" />
+    <ClInclude Include="include\lstring.h" />
+    <ClInclude Include="include\ltable.h" />
+    <ClInclude Include="include\ltm.h" />
+    <ClInclude Include="include\lua.h" />
+    <ClInclude Include="include\lua.hpp" />
+    <ClInclude Include="include\luaconf.h" />
+    <ClInclude Include="include\lualib.h" />
+    <ClInclude Include="include\lundump.h" />
+    <ClInclude Include="include\lvm.h" />
+    <ClInclude Include="include\lzio.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
