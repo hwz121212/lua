@@ -29,11 +29,23 @@ static int print(lua_State *L)
  return 0;
 }
 
-int main(void)
+int main(int argc, char **argv)
 {
- lua_State *L=lua_open();
- lua_register(L,"print",print);
- if (luaL_dofile(L,NULL)!=0) fprintf(stderr,"%s\n",lua_tostring(L,-1));
- lua_close(L);
- return 0;
+	char *filename = NULL;
+	int arg = 0;
+	while (++arg < argc)
+	{
+		if (!strcmp(argv[arg], "--file") ||
+			!strcmp(argv[arg], "-f"))
+		{
+			filename = argv[arg + 1];
+			arg++;			
+		}
+	}
+	   
+	 lua_State *L=lua_open();
+	 lua_register(L,"print",print);
+	 if (luaL_dofile(L, filename)!=0) fprintf(stderr,"%s\n",lua_tostring(L,-1));
+	 lua_close(L);
+	return 0;
 }
